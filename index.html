@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brew & Bean - Home</title>
+  <meta name="description" content="A light, modern coffee shop delivering great coffee, pastries, and a welcoming brand story." />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6F4E37',
+            secondary: '#D6A85A',
+            accent: '#E29B3B',
+            background: '#F7F3ED',
+            surface: '#FFFFFF',
+            text: '#1F1F1F',
+            textSecondary: '#5A5A5A'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-[rgb(247,243,237)]" style="font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;">
+  <div id="site-header"></div>
+
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="bg-white/60 backdrop-blur-md border-b border-gray-200" aria-label="Hero Section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+        <div class="space-y-6 js-animate">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold" style="font-family: 'Poppins', sans-serif; color: #1F1F1F;">Brew & Bean</h1>
+          <p class="text-gray-700 text-lg md:text-xl">A light, modern cafe serving hand-crafted coffee, pastries, and a welcoming story. Explore our menu, locations, and community spirit.</p>
+          <div class="flex flex-wrap gap-4 mt-2">
+            <a href="menu.html" class="inline-flex items-center px-5 py-3 bg-[#6F4E37] text-white rounded-md shadow hover:shadow-lg transition-all duration-300 hover:scale-105 focus:ring-2 focus:ring-offset-2 focus:ring-[#D6A85A]">View Menu</a>
+            <a href="locations.html" class="inline-flex items-center px-5 py-3 bg-white text-[#6F4E37] rounded-md border border-[#6F4E37] shadow hover:shadow-lg transition-all duration-300 hover:scale-105 focus:ring-2 focus:ring-offset-2 focus:ring-[#D6A85A]">Find Locations</a>
+          </div>
+        </div>
+        <div class="flex items-center justify-center js-animate">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop" alt="Cup of coffee" class="w-full h-auto rounded-xl shadow-xl" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Intro Cards -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" aria-label="Brand highlights">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 js-animate" style="border:1px solid rgba(0,0,0,0.05);">
+          <h3 class="font-semibold text-lg mb-2" style="font-family: 'Poppins', sans-serif; color:#1F1F1F;">Quality Coffee</h3>
+          <p class="text-sm text-gray-700">Small-batch roasts, precise pour-overs, and barista craft.</p>
+        </div>
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 js-animate" style="border:1px solid rgba(0,0,0,0.05);">
+          <h3 class="font-semibold text-lg mb-2" style="font-family: 'Poppins', sans-serif; color:#1F1F1F;">Fresh Pastries</h3>
+          <p class="text-sm text-gray-700">Baked daily, from croissants to bear claws.</p>
+        </div>
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 js-animate" style="border:1px solid rgba(0,0,0,0.05);">
+          <h3 class="font-semibold text-lg mb-2" style="font-family: 'Poppins', sans-serif; color:#1F1F1F;">Community & Space</h3>
+          <p class="text-sm text-gray-700">A warm setting for work, study, and conversation.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
