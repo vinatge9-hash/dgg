@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brew & Bean - Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6F4E37',
+            secondary: '#D6A85A',
+            accent: '#E29B3B',
+            background: '#F7F3ED',
+            surface: '#FFFFFF',
+            text: '#1F1F1F',
+            textSecondary: '#5A5A5A'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-[rgb(247,243,237)]">
+  <div id="site-header"></div>
+
+  <main class="pt-20 pb-16">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Menu">
+      <div class="mb-6 js-animate">
+        <h1 class="text-3xl font-bold" style="font-family: 'Poppins', sans-serif; color:#1F1F1F;">Menu</h1>
+        <p class="text-gray-700">Explore our curated selections categorized for quick browsing. Prices shown in USD.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Espresso Section -->
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-5 shadow hover:shadow-lg transition-all duration-300 border border-gray-100 js-animate">
+          <div class="flex items-center justify-between mb-2">
+            <strong>Espresso</strong>
+            <span class="text-sm text-gray-600">$2.50</span>
+          </div>
+          <p class="text-sm text-gray-700">Ristretto, pure espresso shot to start your day.</p>
+        </div>
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-5 shadow hover:shadow-lg transition-all duration-300 border border-gray-100 js-animate">
+          <div class="flex items-center justify-between mb-2">
+            <strong>Americano</strong>
+            <span class="text-sm text-gray-600">$3.00</span>
+          </div>
+          <p class="text-sm text-gray-700">Espresso with hot water for a smooth cup.</p>
+        </div>
+        <!-- Lattes -->
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-5 shadow hover:shadow-lg transition-all duration-300 border border-gray-100 js-animate">
+          <div class="flex items-center justify-between mb-2">
+            <strong>Vanilla Latte</strong>
+            <span class="text-sm text-gray-600">$4.25</span>
+          </div>
+          <p class="text-sm text-gray-700">Creamy espresso with vanilla and steamed milk.</p>
+        </div>
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-5 shadow hover:shadow-lg transition-all duration-300 border border-gray-100 js-animate">
+          <div class="flex items-center justify-between mb-2">
+            <strong>Spice Latte</strong>
+            <span class="text-sm text-gray-600">$4.50</span>
+          </div>
+          <p class="text-sm text-gray-700">Cinnamon, nutmeg, and steamed milk with espresso.</p>
+        </div>
+        <!-- Tea -->
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-5 shadow hover:shadow-lg transition-all duration-300 border border-gray-100 js-animate">
+          <div class="flex items-center justify-between mb-2">
+            <strong>Chai Latte</strong>
+            <span class="text-sm text-gray-600">$4.00</span>
+          </div>
+          <p class="text-sm text-gray-700">Spiced black tea with creamy milk.</p>
+        </div>
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-5 shadow hover:shadow-lg transition-all duration-300 border border-gray-100 js-animate">
+          <div class="flex items-center justify-between mb-2">
+            <strong>Green Tea</strong>
+            <span class="text-sm text-gray-600">$3.50</span>
+          </div>
+          <p class="text-sm text-gray-700">Bright, soothing notes for a light lift.</p>
+        </div>
+        <!-- Pastries -->
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-5 shadow hover:shadow-lg transition-all duration-300 border border-gray-100 js-animate">
+          <div class="flex items-center justify-between mb-2">
+            <strong>Croissant</strong>
+            <span class="text-sm text-gray-600">$3.25</span>
+          </div>
+          <p class="text-sm text-gray-700">Flaky butter croissant, perfect with coffee.</p>
+        </div>
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-5 shadow hover:shadow-lg transition-all duration-300 border border-gray-100 js-animate">
+          <div class="flex items-center justify-between mb-2">
+            <strong>Blueberry Muffin</strong>
+            <span class="text-sm text-gray-600">$3.75</span>
+          </div>
+          <p class="text-sm text-gray-700">Moist muffin bursting with blueberries.</p>
+        </div>
+        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-5 shadow hover:shadow-lg transition-all duration-300 border border-gray-100 js-animate">
+          <div class="flex items-center justify-between mb-2">
+            <strong>Cookies</strong>
+            <span class="text-sm text-gray-600">$2.50</span>
+          </div>
+          <p class="text-sm text-gray-700">Assorted bakery cookies, delicious and soft.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
