@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brew & Bean - Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6F4E37'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-[rgb(247,243,237)]">
+  <div id="site-header"></div>
+
+  <main class="pt-20 pb-16">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Gallery">
+      <div class="js-animate mb-6">
+        <h1 class="text-3xl font-bold" style="font-family: 'Poppins', sans-serif; color:#1F1F1F;">Gallery</h1>
+        <p class="text-gray-700">A visual tour of our cafe, drinks, and pastries.</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <!-- Gallery items -->
+        ${[
+          'https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?q=80&w=600&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1523419408687-8f3a9fadb1a0?q=80&w=600&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1515446418041-fb6b0b9de25d?q=80&w=600&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1551022376-8b8a0f40f1d9?q=80&w=600&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1553090206-3e44d52b5f6d?q=80&w=600&auto=format&fit=crop',
+          'https://images.unsplash.com/photo-1526312425838-d11af86a2a7b?q=80&w=600&auto=format&fit=crop'
+        ].map((src, idx) => `
+          <figure class="bg-white/70 backdrop-blur-sm rounded-xl p-1 shadow hover:shadow-lg transition-all duration-300 js-animate" data-src="${src}">
+            <img src="${src}" alt="Gallery image ${idx + 1}" class="w-full h-32 sm:h-40 object-cover rounded-sm" />
+          </figure>
+        `).join('')}
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="hidden fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4">
+    <div class="relative max-w-4xl max-h-full">
+      <img id="lightbox-img" src="" alt="Lightbox" class="w-full h-auto rounded-md shadow-xl" />
+      <button id="lightbox-close" aria-label="Close" class="absolute top-2 right-2 bg-white/60 rounded-full p-2 hover:bg-white transition-all duration-300">✕</button>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
